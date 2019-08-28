@@ -426,9 +426,11 @@ TrelloPowerUp.initialize({
     let trelloAPIKey = '1128b4c228544f59427fcd18da63e50c';
     // This key will be used to generate a token that you can pass along with the API key to Trello's
     // RESTful API. Using the key/token pair, you can make requests on behalf of the authorized user.
-    
+    console.log('------ apikey');
+    console.log(apiKey);
     // In this case we'll open a popup to kick off the authorization flow.
     if (trelloAPIKey) {
+      console.log('-------- test');
       return t.popup({
         title: 'My Auth Popup',
         args: { apiKey: trelloAPIKey }, // Pass in API key to the iframe
