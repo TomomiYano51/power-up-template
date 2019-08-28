@@ -80,6 +80,8 @@ var GLITCH_ICON = './images/glitch.svg';
 var WHITE_ICON = './images/icon-white.svg';
 var GRAY_ICON = './images/icon-gray.svg';
 
+console.log('------- client.js');
+
 var randomBadgeColor = function() {
   return ['green', 'yellow', 'red', 'none'][Math.floor(Math.random() * 4)];
 };
